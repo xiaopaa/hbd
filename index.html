@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ucapan Ulang Tahun</title>
+  <style>
+    /* Import Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500;700&family=Amiri&display=swap');
+
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #7b2ff7, #f107a3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      min-height: 100vh;
+      overflow-y: auto;
+      color: #fff;
+    }
+
+    /* Container */
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px 50px;
+      border-radius: 30px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+      max-width: 650px;
+      position: relative;
+      margin: 50px;
+    }
+
+    /* Heading */
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #ffdd97;
+      text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.7);
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Paragraph */
+    p {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      color: #f3e5ab;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+      animation-delay: 1s;
+    }
+
+    /* Arabic Text */
+    .arabic {
+      font-size: 1.5rem;
+      font-family: 'Amiri', serif;
+      direction: rtl;
+      text-align: right;
+      color: #f7f7f7;
+      animation: fadeIn 2s ease-in-out;
+      animation-delay: 2s;
+    }
+
+    /* Floating Bubbles */
+    .bubble {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      animation: float 6s infinite ease-in-out;
+    }
+
+    .bubble:nth-child(1) {
+      width: 100px;
+      height: 100px;
+      top: 10%;
+      left: 20%;
+      animation-delay: 0s;
+    }
+
+    .bubble:nth-child(2) {
+      width: 120px;
+      height: 120px;
+      top: 30%;
+      right: 30%;
+      animation-delay: 2s;
+    }
+
+    .bubble:nth-child(3) {
+      width: 90px;
+      height: 90px;
+      top: 70%;
+      left: 50%;
+      animation-delay: 4s;
+    }
+
+    /* Keyframes */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(-10px);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+    }
+
+    /* Button */
+    .btn {
+      margin-top: 30px;
+      padding: 15px 40px;
+      font-size: 1rem;
+      background-color: #ff64f7;
+      border: none;
+      border-radius: 25px;
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(255, 99, 158, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #f05ad2;
+      box-shadow: 0 4px 30px rgba(255, 99, 158, 0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Audio Element -->
+    <audio autoplay>
+      <source src="/hbd.mp3" type="audio/mp3">
+      Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <h1>🎉 Selamat Ulang Tahun! Mbaa Deppp 🎂</h1>
+    <p>
+      "Semoga di umur barumu ini penuh dengan momen seru, tawa tanpa henti, dan pastinya kesuksesan yang datang terus-menerus! Jangan lupa terus jadi versi terbaik dari diri kamu, terus grow, terus fight, dan happy selalu. Semoga impian-impianmu makin deket, dan semua yang kamu inginkan bisa terwujud! Keep shining, and never stop being awesome! 🎂🔥"
+    </p>
+    <p class="arabic">
+      "اللهم احفظه، وامنحه الصحة، والسعادة، ووفقّه في حياته. اللهم اجعل كل جهوده وأدعيتِه تتحقق في أقرب وقت. آمين."
+    </p>
+    <button class="btn" onclick="alert('Semoga doa ini terkabul yaaa! 🌟')">Aamiin</button>
+  </div>
+
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+
+</body>
+</html>
